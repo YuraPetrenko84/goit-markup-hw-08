@@ -1,0 +1,244 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--dark-bg-cl);
+
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__logo {
+    width: 145px;
+    height: 31px;
+    margin-bottom: 20px;
+
+}
+
+.footer__accent {
+    color: var(--logo-white-txt-cl);
+}
+
+.footer__list {
+    width: 231px;
+    height: 81px;
+}
+
+
+.footer__text {
+    margin-bottom: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--logo-white-txt-cl);
+
+ &:hover,
+ &:focus {
+    color: var(--logo-blue-txt-cl);
+    }
+}
+
+// .footer__text:hover,
+// .footer__text:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
+
+.footer__link {
+    margin-bottom: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation),
+    background-color var(--animation);
+
+&:hover,
+    &:focus {
+        color: var(--logo-blue-txt-cl);
+    }
+
+}
+
+// .footer__link:hover,
+// .footer__link:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
+
+.footer__tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+&:hover,
+&:focus {
+    color: var(--logo-blue-txt-cl);
+    }
+}
+
+.footer__text,
+.footer__link,
+.footer__tel {
+    width: 231px;
+    height: 21px;
+}
+
+// .footer__tel:hover,
+// .footer__tel:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
+
+
+/* Футер. Правый блок */
+
+
+.footer__join {
+    margin-left: 70px;
+    margin-right: 93px;
+}
+
+.footer__social--list {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.footer__social--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: color var(--animation),
+    background-color var(--animation);
+
+&:hover,
+&:focus {
+    fill: var(--akcent-color);
+    border-color: var(--akcent-color);
+    border: 1px solid var(--akcent-color);
+    background-color: var(--blue-bg-cl);
+    outline: none;
+    }
+}
+
+.footer__title {
+    display: flex;
+    align-items: baseline;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+    padding-left: 0;
+}
+
+.footer__icon {
+    fill: var(--white-txt-cl);
+}
+
+// .footer__social--link:hover,
+// .footer__social--link:focus {
+//     fill: var(--akcent-color);
+//     border-color: var(--akcent-color);
+//     border: 1px solid var(--akcent-color);
+//     background-color: var(--blue-bg-cl);
+//     outline: none;
+// }
+
+/* Футер підписатися*/
+
+.subsubscription__group {
+    display: flex;
+    gap: 12px;
+}
+
+.subscription__input {
+    display: inline-block;
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation),
+    border-color var(--animation);
+
+&:hover,
+&:focus {
+    border: 1px solid var(--akcent-color);
+    border-color: var(--akcent-color);
+    outline: none;
+    }
+}
+
+// .subscription__input:hover,
+// .subscription__input:focus {
+//     border: 1px solid var(--akcent-color);
+//     border-color: var(--akcent-color);
+//     outline: none;
+
+// }
+
+.subscription__btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-bg-cl);
+    border-radius: 4px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-top: 10px;
+    padding-right: 28px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-left: 28px;
+    cursor: pointer;
+    color: var(--white-txt-cl);
+    border: none;
+}
+
+
+.subscription__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+}

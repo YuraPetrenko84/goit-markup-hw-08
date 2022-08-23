@@ -1,0 +1,214 @@
+.portfolio__button {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.portfolio__list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+
+}
+
+.portfolio__btn--curent {
+    width: 73px;
+    height: 38px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+}
+
+.portfolio__btn--site {
+    max-width: 200px;
+    min-width: 130px;
+    width: 128px;
+    height: 38px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+}
+
+.portfolio__btn--app {
+    width: 145px;
+    height: 38px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+}
+
+.portfolio__btn--design {
+    width: 103px;
+    height: 38px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+}
+
+.portfolio__btn--marketing {
+    width: 130px;
+    height: 38px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    ;
+}
+
+.portfolio__btn {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    background: var(--light-bg-cl);
+    transition: color var(--animation),
+    background-color var(--animation),
+    box-shadow var(--animation);
+    cursor: pointer;
+
+&:hover,
+&:focus {
+    background: var(--blue-bg-cl);
+    color: var(--white-txt-cl);
+    
+  }
+}
+
+.portfolio__list,
+.portfolio__btn {
+    color: var(--main-txt-cl);
+}
+
+.current {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: var(--white-txt-cl);
+    background: var(--blue-bg-cl);
+    border-radius: 4px;
+    border: none;
+}
+
+// .portfolio__btn:hover,
+// .portfolio__btn:focus {
+//     background: var(--blue-bg-cl);
+//     color: var(--white-txt-cl);
+
+// }
+
+.portfolio__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.portfolio__cards--title {
+    max-width: 350px;
+    min-width: 340px;
+    width: 322px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-txt-cl);
+}
+
+.portfolio__cards--text {
+    width: 322px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-cl);
+}
+
+// .portfolio__link--cards:hover,
+// .portfolio__link--cards:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
+
+.portfolio__cards--list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.portfolio__foto {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio__overlay {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform var(--animation);
+
+}
+
+.portfolio__overlay--text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-txt-cl);
+}
+
+.portfolio__foto:hover .portfolio__overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio__item--cards {
+    box-sizing: border-box;
+    width: 370px;
+    background: var(--white-bg-cl);
+    border: 1px solid var(--border-cards-color);
+    transition: transform var(--animation);
+    transition: color var(--animation),
+    background-color var(--animation),
+    box-shadow var(--animation);
+
+&:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ }
+}
+
+.portfolio__cards--name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+// .portfolio__item--cards:hover {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+// }
