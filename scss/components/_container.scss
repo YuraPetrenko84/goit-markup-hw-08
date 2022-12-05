@@ -1,7 +1,58 @@
 .container {
-    width: 1200px;
-    padding-left: 15px;
+    // width: 1200px;
+    // outline: 1px solid red;
+    outline-offset: 1px;
+
+    // mobile screen
     padding-right: 15px;
-    margin-left: auto;
+    padding-left: 15px;
     margin-right: auto;
-}
+    margin-left: auto;      
+
+    // breakpoint 480px for mobile screen
+    @media screen and (min-width: 480px) {
+      width: 450px; 
+    }
+    
+    // breakpoint 768px for tablet screen
+    @media screen and (min-width: 768px) {
+      width: 738px; 
+
+    }
+
+    // breakpoint 1200px for desktop screen
+    @media screen and (min-width: 1200px) {
+      width: 1200px; 
+    }
+
+
+    &__cats-list {
+    display: flex;
+  /* Make a flex container multiline */
+    flex-wrap: wrap;
+  /* Set gap between rows and columns */
+    gap: 30px;
+    margin-bottom: 60px;
+    }
+
+    &__filters-list {
+    display: flex;
+    gap: 8px;
+    /* width: 611px; */
+    /* height: 54px; */
+    justify-content: center;
+    margin-top: 0;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 40px;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        }   
+  } 
+}    

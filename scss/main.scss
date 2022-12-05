@@ -1,22 +1,33 @@
-//utils styles
-@import './utils/variables';
-@import './utils/visually-hidden';
-@import './utils/placeholder';
-//base styles
-@import './base/base';
-@import './base/reset';
-//components styles
-@import './components/button';
-@import './components/modal';
-@import './components/container';
-@import './components/logotype';
-@import './components/title';
-//layout styles
-@import './layout/header';
-@import './layout/register';
-@import './layout/advantage';
-@import './layout/team';
-@import './layout/benefits';
-@import './layout/clients';
-@import './layout/footer';
-@import './layout/portfolio';
+// utils styles 
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/plaseholders-section";
+
+// base styles
+@import "./base/base";
+@import "./base/reset";
+
+// components styles 
+@import "./components/container";
+@import "./components/logo";
+// @import "./components/section";
+@import "./components/titles";
+@import "./components/buttons";
+@import "./components/thumb.scss";
+@import "./components/authentication-form";
+@import "./components/footer-form";
+@import "./components/modal";
+@import "./components/mobile-menu";
+
+// layout styles
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/affairs";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio-filters";
+@import "./layout/portfolio-categories";
+@import "./layout/footer";
+
