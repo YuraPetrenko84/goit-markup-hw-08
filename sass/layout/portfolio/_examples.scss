@@ -1,0 +1,119 @@
+.examples {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.examples__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+
+  @media screen and (max-width: 767px) {
+    --items: 1;
+  }
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
+}
+
+.examples__item {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: -1px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.examples__link {
+  height: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.examples__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+// .examples__img {
+//   width: 100%;
+// }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(33, 150, 243, 0.9);
+
+  .examples__wrap:hover & {
+    transform: translateY(0);
+  }
+}
+
+.overlay__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media screen and (max-width: 340px) {
+    font-size: 12px;
+  }
+}
+
+.examples__name {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  width: 100%;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
+}
+.examples__title {
+  margin-bottom: 4px;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-txt-cl);
+}
+
+.examples__filter {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+}

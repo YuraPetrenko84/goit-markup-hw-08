@@ -1,0 +1,29 @@
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #000000;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+.logo__part {
+  color: #2196f3;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}

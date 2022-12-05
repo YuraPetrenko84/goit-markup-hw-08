@@ -1,0 +1,12 @@
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
+}
